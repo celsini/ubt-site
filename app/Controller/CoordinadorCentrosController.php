@@ -29,7 +29,7 @@ class CoordinadorCentrosController extends AppController {
 	public function view($id = null) {
 		$this->CoordinadorCentro->id = $id;
 		if (!$this->CoordinadorCentro->exists()) {
-			throw new NotFoundException(__('Invalid coordinador centro'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		$this->set('coordinadorCentro', $this->CoordinadorCentro->read(null, $id));
 	}
@@ -43,10 +43,10 @@ class CoordinadorCentrosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->CoordinadorCentro->create();
 			if ($this->CoordinadorCentro->save($this->request->data)) {
-				$this->Session->setFlash(__('The coordinador centro has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The coordinador centro could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		}
 		//$personas = $this->CoordinadorCentro->Persona->find('list');
@@ -68,14 +68,14 @@ class CoordinadorCentrosController extends AppController {
 	public function edit($id = null) {
 		$this->CoordinadorCentro->id = $id;
 		if (!$this->CoordinadorCentro->exists()) {
-			throw new NotFoundException(__('Invalid coordinador centro'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->CoordinadorCentro->save($this->request->data)) {
-				$this->Session->setFlash(__('The coordinador centro has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The coordinador centro could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		} else {
 			$this->request->data = $this->CoordinadorCentro->read(null, $id);
@@ -97,18 +97,18 @@ class CoordinadorCentrosController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
-		if (!$this->request->is('post')) {
+		if (!$this->request->is('get')) {
 			throw new MethodNotAllowedException();
 		}
 		$this->CoordinadorCentro->id = $id;
 		if (!$this->CoordinadorCentro->exists()) {
-			throw new NotFoundException(__('Invalid coordinador centro'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->CoordinadorCentro->delete()) {
-			$this->Session->setFlash(__('Coordinador centro deleted'));
+			$this->Session->setFlash(__('Informaci&oacute;n Elimina'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Coordinador centro was not deleted'));
+		$this->Session->setFlash(__('Informaci&oacute;n no pudo ser elimina'));
 		$this->redirect(array('action' => 'index'));
 	}
 

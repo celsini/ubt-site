@@ -1,6 +1,6 @@
 <div class="equipoEstudios form">
 <?php echo $this->Form->create('EquipoEstudio');?>
-<span class="Titulo-Aplicacion">Listado de equipos de estudios</span>
+<span class="Titulo-Aplicacion">Agregar equipos de estudio</span>
 <span class="Separador_Modulo"></span>
 <div class="Contenedor-Tabla">
 <table class="Tabla-Aplicacion"  width="100%">
@@ -11,7 +11,7 @@
 <td>
 <?php
 	echo $this->Form->error('co_equipo_estudio');
-	echo $this->Form->input('co_equipo_estudio',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('co_equipo_estudio',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -21,7 +21,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_nombre_equipoestudio');
-	echo $this->Form->input('tx_nombre_equipoestudio',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_nombre_equipoestudio',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -31,7 +31,7 @@
 <td>
 <?php
 	echo $this->Form->error('pnf_id');
-	echo $this->Form->input('pnf_id',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('pnf_id',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -41,7 +41,7 @@
 <td>
 <?php
 	echo $this->Form->error('centroformacion_id');
-	echo $this->Form->input('centroformacion_id',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('centroformacion_id',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -51,7 +51,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_turno');
-	echo $this->Form->input('tx_turno',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_turno',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -61,7 +61,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_seccion');
-	echo $this->Form->input('tx_seccion',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_seccion',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>

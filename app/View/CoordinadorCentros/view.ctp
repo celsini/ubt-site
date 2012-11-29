@@ -13,7 +13,7 @@
 		</td>
  </tr> <tr>		<th><?php echo __('Fecha Activo'); ?></th>
 		<td>
-			<?php echo h($coordinadorCentro['CoordinadorCentro']['fe_activo']); ?>
+			<?php echo date('d-m-Y', strtotime($coordinadorCentro['CoordinadorCentro']['fe_activo'])); ?>
 		</td>
  </tr>     
 </table>
@@ -25,7 +25,7 @@
             <td><?php
   echo $this->element('custom_button',array('controller' => "coordinadorCentros",'action' => 'edit','label'=>"EDITAR",'param'=>$coordinadorCentro['CoordinadorCentro']['id'])); 
 ?></td>
-            <td><input type='button' value='ELIMINAR' onclick="if(confirm('¿Esta seguro que desea eliminar el registro?')){location.href='/coordinadorCentros/delete/<?php echo $coordinadorCentro['CoordinadorCentro']['id']?>'}" /></td>
+ <td><input type='button' value='ELIMINAR' onclick="if(confirm('¿Esta seguro que desea eliminar el registro?')){location.href='<?php echo $this->Html->url(array('controller' => 'coordinadorCentros','action' => 'delete',$coordinadorCentro['CoordinadorCentro']['id']));?>'}" /></td>
 
 	</tr>
 </table>

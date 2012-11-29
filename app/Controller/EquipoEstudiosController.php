@@ -27,7 +27,7 @@ class EquipoEstudiosController extends AppController {
 	public function view($id = null) {
 		$this->EquipoEstudio->id = $id;
 		if (!$this->EquipoEstudio->exists()) {
-			throw new NotFoundException(__('Invalid equipo estudio'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		$this->set('equipoEstudio', $this->EquipoEstudio->read(null, $id));
 	}
@@ -41,10 +41,10 @@ class EquipoEstudiosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->EquipoEstudio->create();
 			if ($this->EquipoEstudio->save($this->request->data)) {
-				$this->Session->setFlash(__('The equipo estudio has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The equipo estudio could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		}
 		$pnfs = $this->EquipoEstudio->Pnf->find('list');
@@ -61,14 +61,14 @@ class EquipoEstudiosController extends AppController {
 	public function edit($id = null) {
 		$this->EquipoEstudio->id = $id;
 		if (!$this->EquipoEstudio->exists()) {
-			throw new NotFoundException(__('Invalid equipo estudio'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->EquipoEstudio->save($this->request->data)) {
-				$this->Session->setFlash(__('The equipo estudio has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The equipo estudio could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		} else {
 			$this->request->data = $this->EquipoEstudio->read(null, $id);
@@ -90,13 +90,13 @@ class EquipoEstudiosController extends AppController {
 		}
 		$this->EquipoEstudio->id = $id;
 		if (!$this->EquipoEstudio->exists()) {
-			throw new NotFoundException(__('Invalid equipo estudio'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->EquipoEstudio->delete()) {
-			$this->Session->setFlash(__('Equipo estudio deleted'));
+			$this->Session->setFlash(__('Informaci&oacute;n Elimina'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Equipo estudio was not deleted'));
+		$this->Session->setFlash(__('Información no pudo ser elimina'));
 		$this->redirect(array('action' => 'index'));
 	}
     public function isAuthorized() {

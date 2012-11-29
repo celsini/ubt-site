@@ -1,8 +1,14 @@
 <div class="equipoEstudios form">
 <?php echo $this->Form->create('EquipoEstudio');?>
-<span class="Titulo-Aplicacion">equipoEstudios form</span>
+<span class="Titulo-Aplicacion">Editar- Equipo Estudios</span>
 <span class="Separador_Modulo"></span>
 <div class="Contenedor-Tabla">
+<div class="error-message">
+<?php
+   echo utf8_decode($this->Session->flash());
+?>
+</div>
+
 <table class="Tabla-Aplicacion"  width="100%">
 <tbody>
     <?php echo $this->Form->input('id');?>
@@ -12,7 +18,7 @@
 <td>
 <?php
 	echo $this->Form->error('co_equipo_estudio');
-	echo $this->Form->input('co_equipo_estudio',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('co_equipo_estudio',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -22,7 +28,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_nombre_equipoestudio');
-	echo $this->Form->input('tx_nombre_equipoestudio',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_nombre_equipoestudio',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -32,7 +38,7 @@
 <td>
 <?php
 	echo $this->Form->error('pnf_id');
-	echo $this->Form->input('pnf_id',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('pnf_id',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -42,7 +48,7 @@
 <td>
 <?php
 	echo $this->Form->error('centroformacion_id');
-	echo $this->Form->input('centroformacion_id',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('centroformacion_id',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -52,7 +58,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_turno');
-	echo $this->Form->input('tx_turno',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_turno',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -62,7 +68,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_seccion');
-	echo $this->Form->input('tx_seccion',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_seccion',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -76,7 +82,7 @@
 <table>
 <tr>
     <td>
-        <?php echo $this->Form->end(__('GUARDAR'));?>
+        <?php echo $this->Form->end(__('EDITAR'));?>
     </td>
     <td>
         <?php

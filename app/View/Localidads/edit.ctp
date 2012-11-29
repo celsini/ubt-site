@@ -12,7 +12,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_estado');
-	echo $this->Form->input('tx_estado',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_estado',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -21,7 +21,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_ciudad');
-	echo $this->Form->input('tx_ciudad',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_ciudad',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -31,7 +31,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_municipio');
-	echo $this->Form->input('tx_municipio',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_municipio',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -40,7 +40,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_sector');
-	echo $this->Form->input('tx_sector',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_sector',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>

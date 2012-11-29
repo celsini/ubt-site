@@ -29,7 +29,7 @@ class ComisionsController extends AppController {
 	public function view($id = null) {
 		$this->Comision->id = $id;
 		if (!$this->Comision->exists()) {
-			throw new NotFoundException(__('Invalid comision'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		$this->set('comision', $this->Comision->read(null, $id));
 	}
@@ -43,10 +43,10 @@ class ComisionsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Comision->create();
 			if ($this->Comision->save($this->request->data)) {
-				$this->Session->setFlash(__('The comision has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The comision could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		}
 
@@ -70,14 +70,14 @@ class ComisionsController extends AppController {
 	public function edit($id = null) {
 		$this->Comision->id = $id;
 		if (!$this->Comision->exists()) {
-			throw new NotFoundException(__('Invalid comision'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Comision->save($this->request->data)) {
-				$this->Session->setFlash(__('The comision has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The comision could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		} else {
 			$this->request->data = $this->Comision->read(null, $id);
@@ -100,18 +100,18 @@ class ComisionsController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
-		if (!$this->request->is('post')) {
+		if (!$this->request->is('get')) {
 			throw new MethodNotAllowedException();
 		}
 		$this->Comision->id = $id;
 		if (!$this->Comision->exists()) {
-			throw new NotFoundException(__('Invalid comision'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->Comision->delete()) {
 			$this->Session->setFlash(__('Comision deleted'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Comision was not deleted'));
+		$this->Session->setFlash(__('Informaci&oacute;n no pudo ser eliminada'));
 		$this->redirect(array('action' => 'index'));
 	}
      

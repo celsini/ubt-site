@@ -1,6 +1,6 @@
 <div class="pnfs form">
 <?php echo $this->Form->create('Pnf');?>
-<span class="Titulo-Aplicacion">Listado de PNF</span>
+<span class="Titulo-Aplicacion">Agregar PNF</span>
 <span class="Separador_Modulo"></span>
 <div class="Contenedor-Tabla">
 <table class="Tabla-Aplicacion"  width="100%">
@@ -11,7 +11,7 @@
 <td>
 <?php
 	echo $this->Form->error('co_pnf');
-	echo $this->Form->input('co_pnf',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('co_pnf',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -21,7 +21,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_nombre');
-	echo $this->Form->input('tx_nombre',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_nombre',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -31,7 +31,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_codigointerno_ubt');
-	echo $this->Form->input('tx_codigointerno_ubt',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_codigointerno_ubt',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>

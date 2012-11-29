@@ -45,6 +45,11 @@ class Centroformacion extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+                        'unique' => array(
+                            'rule' => 'isUnique',
+                            'required' => 'create',
+                             'message' => '↓ Código ya existe verifique ↓'
+                        )
 		),
 		'tx_centroformacion' => array(
 			'notempty' => array(

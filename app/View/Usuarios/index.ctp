@@ -6,7 +6,6 @@
 <?php
    echo utf8_decode($this->Session->flash());
 ?>
-
 </div>
 	<table class="Tabla-Aplicacion"  width="100%">
 	<tr>

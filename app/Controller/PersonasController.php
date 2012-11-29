@@ -28,7 +28,7 @@ class PersonasController extends AppController {
 	public function view($id = null) {
 		$this->Persona->id = $id;
 		if (!$this->Persona->exists()) {
-			throw new NotFoundException(__('Invalid persona'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		$this->set('persona', $this->Persona->read(null, $id));
 	}
@@ -42,15 +42,15 @@ class PersonasController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Persona->create();
 			if ($this->Persona->save($this->request->data)) {
-				$this->Session->setFlash(__('The persona has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The persona could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		}
 		//$localidads = $this->Persona->Localidad->find('list');
                 $results = $this->Persona->Localidad->find('all');
-                $options = Set::combine($results, '{n}.Localidad.id', array('{0} -- {1}-- {1}', '{n}.Localidad.tx_estado', '{n}.Localidad.tx_ciudad','{n}.Localidad.tx_sector'));
+                $options = Set::combine($results, '{n}.Localidad.id', array('{0} -- {1}-- {2}', '{n}.Localidad.tx_estado', '{n}.Localidad.tx_ciudad','{n}.Localidad.tx_sector'));
 
                 $meses = $this->mesesArray;
 		$this->set(compact('localidads','meses','options'));
@@ -65,14 +65,14 @@ class PersonasController extends AppController {
 	public function edit($id = null) {
 		$this->Persona->id = $id;
 		if (!$this->Persona->exists()) {
-			throw new NotFoundException(__('Invalid persona'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Persona->save($this->request->data)) {
-				$this->Session->setFlash(__('The persona has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The persona could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		} else {
 			$this->request->data = $this->Persona->read(null, $id);
@@ -92,18 +92,18 @@ class PersonasController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
-		if (!$this->request->is('post')) {
+		if (!$this->request->is('get')) {
 			throw new MethodNotAllowedException();
 		}
 		$this->Persona->id = $id;
 		if (!$this->Persona->exists()) {
-			throw new NotFoundException(__('Invalid persona'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->Persona->delete()) {
-			$this->Session->setFlash(__('Persona deleted'));
+			$this->Session->setFlash(__('Informaci&oacute;n Elimina'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Persona was not deleted'));
+		$this->Session->setFlash(__('Informaci&oacute;n no pudo ser elimina'));
 		$this->redirect(array('action' => 'index'));
 	}
 

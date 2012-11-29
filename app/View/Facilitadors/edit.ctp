@@ -12,7 +12,7 @@
 <td>
 <?php
 	echo $this->Form->error('persona_id');
-	echo $this->Form->input('persona_id',array('label'=>false,'error'=>false,'style'=>'width:200px;','options'=>$options));
+	echo $this->Form->input('persona_id',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase','options'=>$options));
 ?>
 </td>
 </tr>
@@ -22,7 +22,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_agresadouniversidad');
-	echo $this->Form->input('tx_agresadouniversidad',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_agresadouniversidad',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -32,7 +32,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_profesion');
-	echo $this->Form->input('tx_profesion',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_profesion',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -52,7 +52,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_postgrado');
-	echo $this->Form->input('tx_postgrado',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_postgrado',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>

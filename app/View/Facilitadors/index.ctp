@@ -1,7 +1,12 @@
 <div class="facilitadors index">
-        <span class="Titulo-Aplicacion"><?php echo __('Facilitadors');?></span>
+        <span class="Titulo-Aplicacion"><?php echo __('Listados Facilitadores');?></span>
         <span class="Separador_Modulo"></span>
         <div class="Contenedor-Tabla">
+<div class="error-message">
+<?php
+   echo utf8_decode($this->Session->flash());
+?>
+</div>
 	<table class="Tabla-Aplicacion"  width="100%">
 	<tr>
 			<th><?php echo ('Identificador');?></th>
@@ -21,7 +26,8 @@
 		</td>
 		<td><?php echo h($facilitador['Facilitador']['tx_agresadouniversidad']); ?>&nbsp;</td>
 		<td><?php echo h($facilitador['Facilitador']['tx_profesion']); ?>&nbsp;</td>
-		<td><?php echo h($facilitador['Facilitador']['fe_grado']); ?>&nbsp;</td>
+		<td><?php echo date('d-m-Y', strtotime($facilitador['Facilitador']['fe_grado'])) ?>&nbsp;</td>
+                
 		<td><?php echo h($facilitador['Facilitador']['tx_postgrado']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('Consultar'), array('action' => 'view', $facilitador['Facilitador']['id'])); ?>

@@ -44,6 +44,11 @@ class Comision extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+                        'unique' => array(
+                            'rule' => 'isUnique',
+                            'required' => 'create',
+                             'message' => 'Comisión ya existe verifique!'
+                        )
 		),
 		'persona_id' => array(
 			'notempty' => array(

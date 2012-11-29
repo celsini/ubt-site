@@ -23,6 +23,9 @@ class Persona extends AppModel {
  * @var string
  */
 	public $displayField = 'co_cedula';
+
+        //var $actsAs =array('DataCase'=>array('author'=>'upper'));
+        var $actsAs =array('DataCase'=>array('author'=>'upper'));
 /**
  * Validation rules
  *
@@ -48,6 +51,11 @@ class Persona extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+                    'unique' => array(
+                        'rule' => 'isUnique',
+                        'required' => 'create',
+                        'message' => 'Usuario ya existe verifique!'
+                        )
 		),
 		'localidad_id' => array(
 			'notempty' => array(
@@ -198,7 +206,17 @@ class Persona extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+                       'unique' => array(
+                        'rule' => 'isUnique',
+                        'required' => 'create',
+                        'message' => 'El correo ya existe verifique!'
+                        ),
+                       'email' => array(
+                            'rule'    => array('email', true),
+                            'message' => '↓ Ingrese una dirección email valida ↓'
+                        )
 		),
+
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed

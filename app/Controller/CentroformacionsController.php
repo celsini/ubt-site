@@ -27,7 +27,7 @@ class CentroformacionsController extends AppController {
 	public function view($id = null) {
 		$this->Centroformacion->id = $id;
 		if (!$this->Centroformacion->exists()) {
-			throw new NotFoundException(__('Invalid centroformacion'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		$this->set('centroformacion', $this->Centroformacion->read(null, $id));
 	}
@@ -41,10 +41,10 @@ class CentroformacionsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Centroformacion->create();
 			if ($this->Centroformacion->save($this->request->data)) {
-				$this->Session->setFlash(__('The centroformacion has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The centroformacion could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		}
 
@@ -66,14 +66,14 @@ class CentroformacionsController extends AppController {
 	public function edit($id = null) {
 		$this->Centroformacion->id = $id;
 		if (!$this->Centroformacion->exists()) {
-			throw new NotFoundException(__('Invalid centroformacion'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Centroformacion->save($this->request->data)) {
-				$this->Session->setFlash(__('The centroformacion has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The centroformacion could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		} else {
 			$this->request->data = $this->Centroformacion->read(null, $id);
@@ -99,13 +99,13 @@ class CentroformacionsController extends AppController {
 		}
 		$this->Centroformacion->id = $id;
 		if (!$this->Centroformacion->exists()) {
-			throw new NotFoundException(__('Invalid centroformacion'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->Centroformacion->delete()) {
-			$this->Session->setFlash(__('Centroformacion deleted'));
+			$this->Session->setFlash(__('Informaci&oacute;n Elimina'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Centroformacion was not deleted'));
+		$this->Session->setFlash(__('Informaci&oacute;n no pudo ser eliminada'));
 		$this->redirect(array('action' => 'index'));
 	}
 

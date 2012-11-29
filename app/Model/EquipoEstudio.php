@@ -45,6 +45,11 @@ class EquipoEstudio extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+                    'unique' => array(
+                        'rule' => 'isUnique',
+                        'required' => 'create',
+                        'message' => '↓ Equipo ya existe verifique ↓'
+                        )
 		),
 		'tx_nombre_equipoestudio' => array(
 			'notempty' => array(

@@ -12,7 +12,7 @@
 <td>
 <?php
 	echo $this->Form->error('co_centro_formacion');
-	echo $this->Form->input('co_centro_formacion',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('co_centro_formacion',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -22,7 +22,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_centroformacion');
-	echo $this->Form->input('tx_centroformacion',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_centroformacion',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -32,7 +32,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_unidadformacion');
-	echo $this->Form->input('tx_unidadformacion',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_unidadformacion',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -42,7 +42,7 @@
 <td>
 <?php
 	echo $this->Form->error('localidad_id');
-	echo $this->Form->input('localidad_id',array('label'=>false,'error'=>false,'style'=>'width:200px;','options'=>$optionsLocalidad));
+	echo $this->Form->input('localidad_id',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase','options'=>$optionsLocalidad));
 ?>
 </td>
 </tr>
@@ -52,7 +52,7 @@
 <td>
 <?php
 	echo $this->Form->error('persona_id');
-	echo $this->Form->input('persona_id',array('label'=>false,'error'=>false,'style'=>'width:200px;','options'=>$optionsPersona));
+	echo $this->Form->input('persona_id',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase','options'=>$optionsPersona));
 ?>
 </td>
 </tr>

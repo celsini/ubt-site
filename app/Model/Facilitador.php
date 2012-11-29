@@ -110,8 +110,8 @@ class Facilitador extends AppModel {
  * @var array
  */
 	public $hasMany = array(
-		'EquipoMaterium' => array(
-			'className' => 'EquipoMaterium',
+		'EquipoMateria' => array(
+			'className' => 'EquipoMateria',
 			'foreignKey' => 'facilitador_id',
 			'dependent' => false,
 			'conditions' => '',

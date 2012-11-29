@@ -12,12 +12,15 @@
 		</td>
  </tr> <tr>		<th><?php echo __('Facilitador'); ?></th>
 		<td>
-			<?php echo $this->Html->link($equipoMateria['Facilitador']['id'], array('controller' => 'facilitadors', 'action' => 'view', $equipoMateria['Facilitador']['id'])); ?>
+			<?php
+                            $facilitador = $equipoMateria['Facilitador']['Persona']['tx_nombre1'].' '.$equipoMateria['Facilitador']['Persona']['tx_apellido1'];
+                            echo $this->Html->link($facilitador, array('controller' => 'facilitadors', 'action' => 'view', $equipoMateria['Facilitador']['id']));
+                          ?>
 			&nbsp;
 		</td>
  </tr> <tr>		<th><?php echo __('Fecha Cierre'); ?></th>
 		<td>
-			<?php echo h($equipoMateria['EquipoMateria']['fe_cierre']); ?>
+			<?php echo date('d-m-Y', strtotime($equipoMateria['EquipoMateria']['fe_cierre'])); ?>
 		</td>
  </tr> <tr>		<th><?php echo __('Periodo'); ?></th>
 		<td>

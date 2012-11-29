@@ -1,7 +1,12 @@
 <div class="equipoEstudios index">
-        <span class="Titulo-Aplicacion"><?php echo __('Equipo Estudios');?></span>
+        <span class="Titulo-Aplicacion"><?php echo __('Listado Equipo Estudios');?></span>
         <span class="Separador_Modulo"></span>
         <div class="Contenedor-Tabla">
+<div class="error-message">
+<?php
+   echo utf8_decode($this->Session->flash());
+?>
+</div>
 	<table class="Tabla-Aplicacion"  width="100%">
 	<tr>
 			<th><?php echo ('Ident');?></th>

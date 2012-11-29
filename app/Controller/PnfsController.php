@@ -27,7 +27,7 @@ class PnfsController extends AppController {
 	public function view($id = null) {
 		$this->Pnf->id = $id;
 		if (!$this->Pnf->exists()) {
-			throw new NotFoundException(__('Invalid pnf'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		$this->set('pnf', $this->Pnf->read(null, $id));
 	}
@@ -41,10 +41,10 @@ class PnfsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Pnf->create();
 			if ($this->Pnf->save($this->request->data)) {
-				$this->Session->setFlash(__('The pnf has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The pnf could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		}
 	}
@@ -58,14 +58,14 @@ class PnfsController extends AppController {
 	public function edit($id = null) {
 		$this->Pnf->id = $id;
 		if (!$this->Pnf->exists()) {
-			throw new NotFoundException(__('Invalid pnf'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Pnf->save($this->request->data)) {
-				$this->Session->setFlash(__('The pnf has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The pnf could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		} else {
 			$this->request->data = $this->Pnf->read(null, $id);
@@ -84,13 +84,13 @@ class PnfsController extends AppController {
 		}
 		$this->Pnf->id = $id;
 		if (!$this->Pnf->exists()) {
-			throw new NotFoundException(__('Invalid pnf'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->Pnf->delete()) {
-			$this->Session->setFlash(__('Pnf deleted'));
+			$this->Session->setFlash(__('Informaci&oacute;n Elimina'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Pnf was not deleted'));
+		$this->Session->setFlash(__('Informaci&oacute;n no pudo ser eliminada'));
 		$this->redirect(array('action' => 'index'));
 	}
     public function isAuthorized() {

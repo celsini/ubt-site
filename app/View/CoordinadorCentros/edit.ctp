@@ -12,7 +12,7 @@
 <td>
 <?php
 	echo $this->Form->error('persona_id');
-	echo $this->Form->input('persona_id',array('label'=>false,'error'=>false,'style'=>'width:200px;','options'=>$options));
+	echo $this->Form->input('persona_id',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase','options'=>$options));
 ?>
 </td>
 </tr>

@@ -11,7 +11,7 @@
 <td>
 <?php
 	echo $this->Form->error('co_ubt');
-	echo $this->Form->input('co_ubt',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('co_ubt',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -21,7 +21,7 @@
 <td>
 <?php
 	echo $this->Form->error('persona_id');
-	echo $this->Form->input('persona_id',array('label'=>false,'error'=>false,'style'=>'width:200px;','options'=>$options));
+	echo $this->Form->input('persona_id',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase','options'=>$options));
 ?>
 </td>
 </tr>
@@ -31,7 +31,7 @@
 <td>
 <?php
 	echo $this->Form->error('persona_idd');
-	echo $this->Form->input('persona_idd',array('label'=>false,'error'=>false,'style'=>'width:200px;','options'=>$options));
+	echo $this->Form->input('persona_idd',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase','options'=>$options));
 ?>
 </td>
 </tr>

@@ -22,7 +22,7 @@
 		</td>
  </tr> <tr>		<th><?php echo __('Fecha Registro'); ?></th>
 		<td>
-			<?php echo h($comision['Comision']['fe_registro']); ?>
+			<?php echo date('d-m-Y', strtotime($comision['Comision']['fe_registro'])); ?>
 		</td>
  </tr>     
 </table>

@@ -11,7 +11,7 @@
 <td>
 <?php
 	echo $this->Form->error('co_materia');
-	echo $this->Form->input('co_materia',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('co_materia',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -21,7 +21,7 @@
 <td>
 <?php
 	echo $this->Form->error('tx_unidad_curricular');
-	echo $this->Form->input('tx_unidad_curricular',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('tx_unidad_curricular',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -31,7 +31,7 @@
 <td>
 <?php
 	echo $this->Form->error('nu_trayecto');
-	echo $this->Form->input('nu_trayecto',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('nu_trayecto',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -41,7 +41,7 @@
 <td>
 <?php
 	echo $this->Form->error('nu_tramo');
-	echo $this->Form->input('nu_tramo',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('nu_tramo',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -51,7 +51,7 @@
 <td>
 <?php
 	echo $this->Form->error('nu_uc');
-	echo $this->Form->input('nu_uc',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('nu_uc',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>
@@ -61,7 +61,7 @@
 <td>
 <?php
 	echo $this->Form->error('pnf_id');
-	echo $this->Form->input('pnf_id',array('label'=>false,'error'=>false,'style'=>'width:200px;'));
+	echo $this->Form->input('pnf_id',array('label'=>false,'error'=>false,'style'=>'width:200px;','class'=>'justUpperCase'));
 ?>
 </td>
 </tr>

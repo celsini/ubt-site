@@ -28,8 +28,9 @@ class EquipoMateriasController extends AppController {
  */
 	public function view($id = null) {
 		$this->EquipoMateria->id = $id;
+                $this->EquipoMateria->recursive = 2;
 		if (!$this->EquipoMateria->exists()) {
-			throw new NotFoundException(__('Invalid equipo materia'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		$this->set('equipoMateria', $this->EquipoMateria->read(null, $id));
 	}
@@ -43,10 +44,10 @@ class EquipoMateriasController extends AppController {
 		if ($this->request->is('post')) {
 			$this->EquipoMateria->create();
 			if ($this->EquipoMateria->save($this->request->data)) {
-				$this->Session->setFlash(__('The equipo materia has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The equipo materia could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		}
 		$materias = $this->EquipoMateria->Materia->find('list');
@@ -69,14 +70,14 @@ class EquipoMateriasController extends AppController {
 	public function edit($id = null) {
 		$this->EquipoMateria->id = $id;
 		if (!$this->EquipoMateria->exists()) {
-			throw new NotFoundException(__('Invalid equipo materia'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->EquipoMateria->save($this->request->data)) {
-				$this->Session->setFlash(__('The equipo materia has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The equipo materia could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		} else {
 			$this->request->data = $this->EquipoMateria->read(null, $id);
@@ -105,13 +106,13 @@ class EquipoMateriasController extends AppController {
 		}
 		$this->EquipoMateria->id = $id;
 		if (!$this->EquipoMateria->exists()) {
-			throw new NotFoundException(__('Invalid equipo materia'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->EquipoMateria->delete()) {
-			$this->Session->setFlash(__('Equipo materia deleted'));
+			$this->Session->setFlash(__('Informaci&oacute;n Elimina'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Equipo materia was not deleted'));
+		$this->Session->setFlash(__('Informaci&oacute;n no pudo ser eliminada'));
 		$this->redirect(array('action' => 'index'));
 	}
 

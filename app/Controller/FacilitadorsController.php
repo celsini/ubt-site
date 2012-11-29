@@ -29,7 +29,7 @@ class FacilitadorsController extends AppController {
 	public function view($id = null) {
 		$this->Facilitador->id = $id;
 		if (!$this->Facilitador->exists()) {
-			throw new NotFoundException(__('Invalid facilitador'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		$this->set('facilitador', $this->Facilitador->read(null, $id));
 	}
@@ -43,10 +43,10 @@ class FacilitadorsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Facilitador->create();
 			if ($this->Facilitador->save($this->request->data)) {
-				$this->Session->setFlash(__('The facilitador has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The facilitador could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		}
 
@@ -67,14 +67,14 @@ class FacilitadorsController extends AppController {
 	public function edit($id = null) {
 		$this->Facilitador->id = $id;
 		if (!$this->Facilitador->exists()) {
-			throw new NotFoundException(__('Invalid facilitador'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Facilitador->save($this->request->data)) {
-				$this->Session->setFlash(__('The facilitador has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The facilitador could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		} else {
 			$this->request->data = $this->Facilitador->read(null, $id);
@@ -99,13 +99,13 @@ class FacilitadorsController extends AppController {
 		}
 		$this->Facilitador->id = $id;
 		if (!$this->Facilitador->exists()) {
-			throw new NotFoundException(__('Invalid facilitador'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->Facilitador->delete()) {
-			$this->Session->setFlash(__('Facilitador deleted'));
+			$this->Session->setFlash(__('Informaci&oacute;n Elimina'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Facilitador was not deleted'));
+		$this->Session->setFlash(__('Informaci&oacute;n no pudo ser elimina'));
 		$this->redirect(array('action' => 'index'));
 	}
 

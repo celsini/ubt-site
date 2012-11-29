@@ -21,7 +21,7 @@
 		</td>
  </tr> <tr>		<th><?php echo __('Fecha Grado'); ?></th>
 		<td>
-			<?php echo h($facilitador['Facilitador']['fe_grado']); ?>
+			<?php echo date('d-m-Y', strtotime($facilitador['Facilitador']['fe_grado'])) ?>
 		</td>
  </tr> <tr>		<th><?php echo __('Postgrado'); ?></th>
 		<td>
@@ -37,8 +37,8 @@
             <td><?php
   echo $this->element('custom_button',array('controller' => "facilitadors",'action' => 'edit','label'=>"EDITAR",'param'=>$facilitador['Facilitador']['id'])); 
 ?></td>
-            <td><input type='button' value='ELIMINAR' onclick="if(confirm('¿Esta seguro que desea eliminar el registro?')){location.href='/facilitadors/delete/<?php echo $facilitador['Facilitador']['id']?>'}" /></td>
 
+ <td><input type='button' value='ELIMINAR' onclick="if(confirm('¿Esta seguro que desea eliminar el registro?')){location.href='<?php echo $this->Html->url(array('controller' => 'facilitadors','action' => 'delete',$facilitador['Facilitador']['id']));?>'}" /></td>
 	</tr>
 </table>
 </div>

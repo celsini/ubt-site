@@ -1438,3 +1438,122 @@ LINE 1: ...FT JOIN "universidad"."materias" AS "Materia" ON ("EquipoMat...
 #16 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #17 /var/www/ubtsite/index.php(40): require('/var/www/ubtsit...')
 #18 {main}
+2012-11-29 09:43:33 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «persona_id_seq»
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/Database/Postgres.php(283): PDO->lastInsertId('persona_id_seq')
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(987): Postgres->lastInsertId('persona', 'id')
+#2 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(Persona), Array, Array)
+#3 /var/www/ubtsite/app/Controller/PersonasController.php(44): Model->save(Array)
+#4 [internal function]: PersonasController->add()
+#5 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PersonasController), Array)
+#6 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PersonasController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/index.php(40): require('/var/www/ubtsit...')
+#10 {main}
+2012-11-29 09:47:22 Error: [MethodNotAllowedException] Method Not Allowed
+#0 [internal function]: PersonasController->delete('2')
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PersonasController), Array)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PersonasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(40): require('/var/www/ubtsit...')
+#6 {main}
+2012-11-29 09:47:46 Error: [MethodNotAllowedException] Method Not Allowed
+#0 [internal function]: PersonasController->delete('2')
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PersonasController), Array)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PersonasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(40): require('/var/www/ubtsit...')
+#6 {main}
+2012-11-29 09:48:59 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «persona_id_seq»
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/Database/Postgres.php(283): PDO->lastInsertId('persona_id_seq')
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(987): Postgres->lastInsertId('persona', 'id')
+#2 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(Persona), Array, Array)
+#3 /var/www/ubtsite/app/Controller/PersonasController.php(44): Model->save(Array)
+#4 [internal function]: PersonasController->add()
+#5 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PersonasController), Array)
+#6 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PersonasController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/index.php(40): require('/var/www/ubtsit...')
+#10 {main}
+2012-11-29 09:50:46 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «persona_id_seq»
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/Database/Postgres.php(283): PDO->lastInsertId('persona_id_seq')
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(987): Postgres->lastInsertId('persona', 'id')
+#2 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(Persona), Array, Array)
+#3 /var/www/ubtsite/app/Controller/PersonasController.php(44): Model->save(Array)
+#4 [internal function]: PersonasController->add()
+#5 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PersonasController), Array)
+#6 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PersonasController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/index.php(40): require('/var/www/ubtsit...')
+#10 {main}
+2012-11-29 09:56:05 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «persona_id_seq»
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/Database/Postgres.php(283): PDO->lastInsertId('persona_id_seq')
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(987): Postgres->lastInsertId('persona', 'id')
+#2 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(Persona), Array, Array)
+#3 /var/www/ubtsite/app/Controller/PersonasController.php(44): Model->save(Array)
+#4 [internal function]: PersonasController->add()
+#5 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PersonasController), Array)
+#6 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PersonasController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/index.php(40): require('/var/www/ubtsit...')
+#10 {main}
+2012-11-29 09:56:44 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «persona_id_seq»
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/Database/Postgres.php(283): PDO->lastInsertId('persona_id_seq')
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(987): Postgres->lastInsertId('persona', 'id')
+#2 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(Persona), Array, Array)
+#3 /var/www/ubtsite/app/Controller/PersonasController.php(44): Model->save(Array)
+#4 [internal function]: PersonasController->add()
+#5 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PersonasController), Array)
+#6 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PersonasController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/index.php(40): require('/var/www/ubtsit...')
+#10 {main}
+2012-11-29 12:40:27 Error: [MissingTableException] Table equipo_materia for model EquipoMaterium was not found in datasource default.
+#0 /var/www/ubtsite/lib/Cake/Model/Model.php(3443): Model->setSource('equipo_materia')
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(1044): Model->getDataSource()
+#2 /var/www/ubtsite/lib/Cake/Model/Model.php(2698): DboSource->read(Object(Facilitador), Array)
+#3 /var/www/ubtsite/lib/Cake/Model/Model.php(1507): Model->find('first', Array)
+#4 /var/www/ubtsite/app/Controller/FacilitadorsController.php(34): Model->read(NULL, '2')
+#5 [internal function]: FacilitadorsController->view('2')
+#6 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(FacilitadorsController), Array)
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(FacilitadorsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/ubtsite/index.php(40): require('/var/www/ubtsit...')
+#11 {main}
+2012-11-29 12:40:33 Error: [MissingTableException] Table equipo_materia for model EquipoMaterium was not found in datasource default.
+#0 /var/www/ubtsite/lib/Cake/Model/Model.php(3443): Model->setSource('equipo_materia')
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(1044): Model->getDataSource()
+#2 /var/www/ubtsite/lib/Cake/Model/Model.php(2698): DboSource->read(Object(Facilitador), Array)
+#3 /var/www/ubtsite/lib/Cake/Model/Model.php(1507): Model->find('first', Array)
+#4 /var/www/ubtsite/app/Controller/FacilitadorsController.php(34): Model->read(NULL, '1')
+#5 [internal function]: FacilitadorsController->view('1')
+#6 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(FacilitadorsController), Array)
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(FacilitadorsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/ubtsite/index.php(40): require('/var/www/ubtsit...')
+#11 {main}
+2012-11-29 12:40:49 Error: [MissingTableException] Table equipo_materia for model EquipoMaterium was not found in datasource default.
+#0 /var/www/ubtsite/lib/Cake/Model/Model.php(3443): Model->setSource('equipo_materia')
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(1044): Model->getDataSource()
+#2 /var/www/ubtsite/lib/Cake/Model/Model.php(2698): DboSource->read(Object(Facilitador), Array)
+#3 /var/www/ubtsite/lib/Cake/Model/Model.php(1507): Model->find('first', Array)
+#4 /var/www/ubtsite/app/Controller/FacilitadorsController.php(34): Model->read(NULL, '1')
+#5 [internal function]: FacilitadorsController->view('1')
+#6 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(FacilitadorsController), Array)
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(FacilitadorsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/ubtsite/index.php(40): require('/var/www/ubtsit...')
+#11 {main}
+2012-11-29 13:26:44 Error: [MissingControllerException] Controller class RolesController could not be found.
+#0 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/ubtsite/index.php(40): require('/var/www/ubtsit...')
+#2 {main}

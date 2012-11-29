@@ -41,7 +41,8 @@
 		</td>
  </tr> <tr>		<th><?php echo __('Nacimiento'); ?></th>
 		<td>
-			<?php echo h($persona['Persona']['fe_nacimiento']); ?>
+			<?php echo date('d-m-Y', strtotime($persona['Persona']['fe_nacimiento'])); ?>
+
 		</td>
  </tr> <tr>		<th><?php echo __('Lugar Nacimiento'); ?></th>
 		<td>
@@ -81,7 +82,7 @@
             <td><?php
   echo $this->element('custom_button',array('controller' => "personas",'action' => 'edit','label'=>"EDITAR",'param'=>$persona['Persona']['id'])); 
 ?></td>
-            <td><input type='button' value='ELIMINAR' onclick="if(confirm('¿Esta seguro que desea eliminar el registro?')){location.href='/personas/delete/<?php echo $persona['Persona']['id']?>'}" /></td>
+            <td><input type='button' value='ELIMINAR' onclick="if(confirm('¿Esta seguro que desea eliminar el registro?')){location.href='<?php echo $this->Html->url(array('controller' => 'personas','action' => 'delete',$persona['Persona']['id']));?>'}" /></td>
 
 	</tr>
 </table>
