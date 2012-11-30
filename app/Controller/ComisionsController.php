@@ -108,7 +108,7 @@ class ComisionsController extends AppController {
 			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->Comision->delete()) {
-			$this->Session->setFlash(__('Comision deleted'));
+			$this->Session->setFlash(__('Comision eliminada'));
 			$this->redirect(array('action' => 'index'));
 		}
 		$this->Session->setFlash(__('Informaci&oacute;n no pudo ser eliminada'));

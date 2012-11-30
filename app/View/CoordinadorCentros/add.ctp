@@ -1,6 +1,6 @@
 <div class="coordinadorCentros form">
 <?php echo $this->Form->create('CoordinadorCentro');?>
-    <span class="Titulo-Aplicacion">Centro de formaci&oacute;n</span>
+    <span class="Titulo-Aplicacion">Coordinador Centro de formaci&oacute;n</span>
 <span class="Separador_Modulo"></span>
 <div class="Contenedor-Tabla">
 <table class="Tabla-Aplicacion"  width="100%">

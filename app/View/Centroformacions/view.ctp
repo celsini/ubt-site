@@ -40,7 +40,7 @@
             <td><?php
   echo $this->element('custom_button',array('controller' => "centroformacions",'action' => 'edit','label'=>"EDITAR",'param'=>$centroformacion['Centroformacion']['id'])); 
 ?></td>
-            <td><input type='button' value='ELIMINAR' onclick="if(confirm('¿Esta seguro que desea eliminar el registro?')){location.href='/centroformacions/delete/<?php echo $centroformacion['Centroformacion']['id']?>'}" /></td>
+            <td><input type='button' value='ELIMINAR' onclick="if(confirm('¿Esta seguro que desea eliminar el registro?')){location.href='<?php echo $this->Html->url(array('controller' => 'centroformacions','action' => 'delete',$centroformacion['Centroformacion']['id']));?>'}" /></td>
 
 	</tr>
 </table>

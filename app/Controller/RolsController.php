@@ -27,7 +27,7 @@ class RolsController extends AppController {
 	public function view($id = null) {
 		$this->Rol->id = $id;
 		if (!$this->Rol->exists()) {
-			throw new NotFoundException(__('Invalid rol'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		$this->set('rol', $this->Rol->read(null, $id));
 	}
@@ -41,10 +41,10 @@ class RolsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Rol->create();
 			if ($this->Rol->save($this->request->data)) {
-				$this->Session->setFlash(__('The rol has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The rol could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		}
 	}
@@ -58,14 +58,14 @@ class RolsController extends AppController {
 	public function edit($id = null) {
 		$this->Rol->id = $id;
 		if (!$this->Rol->exists()) {
-			throw new NotFoundException(__('Invalid rol'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Rol->save($this->request->data)) {
-				$this->Session->setFlash(__('The rol has been saved'));
+				$this->Session->setFlash(__('Informaci&oacute;n registada con &eacute;xito'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The rol could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('Informaci&oacute;n no pudo ser registrada. Por favor intente nuevamente'));
 			}
 		} else {
 			$this->request->data = $this->Rol->read(null, $id);
@@ -79,18 +79,18 @@ class RolsController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
-		if (!$this->request->is('post')) {
+		if (!$this->request->is('get')) {
 			throw new MethodNotAllowedException();
 		}
 		$this->Rol->id = $id;
 		if (!$this->Rol->exists()) {
-			throw new NotFoundException(__('Invalid rol'));
+			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->Rol->delete()) {
-			$this->Session->setFlash(__('Rol deleted'));
+			$this->Session->setFlash(__('Informaci&oacute;n Eliminada'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Rol was not deleted'));
+		$this->Session->setFlash(__('Informaci&oacute;n no pudo ser eliminada'));
 		$this->redirect(array('action' => 'index'));
 	}
        public function isAuthorized() {

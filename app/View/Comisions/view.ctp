@@ -34,7 +34,7 @@
             <td><?php
   echo $this->element('custom_button',array('controller' => "comisions",'action' => 'edit','label'=>"EDITAR",'param'=>$comision['Comision']['id'])); 
 ?></td>
-            <td><input type='button' value='ELIMINAR' onclick="if(confirm('¿Esta seguro que desea eliminar el registro?')){location.href='/comisions/delete/<?php echo $comision['Comision']['id']?>'}" /></td>
+            <td><input type='button' value='ELIMINAR' onclick="if(confirm('¿Esta seguro que desea eliminar el registro?')){location.href='<?php echo $this->Html->url(array('controller' => 'comisions','action' => 'delete',$comision['Comision']['id']));?>'}" /></td>
 
 	</tr>
 </table>

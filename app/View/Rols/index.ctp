@@ -2,11 +2,16 @@
         <span class="Titulo-Aplicacion"><?php echo __('Rols');?></span>
         <span class="Separador_Modulo"></span>
         <div class="Contenedor-Tabla">
+<div class="error-message">
+<?php
+   echo utf8_decode($this->Session->flash());
+?>
+</div>
 	<table class="Tabla-Aplicacion"  width="100%">
 	<tr>
-			<th><?php echo ('Identificador');?></th>
-			<th><?php echo 'Rol';?></th>
-			<th><?php echo ('Descripci&oacute;n');?></th>
+			<th><?php echo ('Ident');?></th>
+			<th><?php echo ('Rol');?></th>
+			<th><?php echo ('Descripción Rol');?></th>
 			<th class="actions"><?php echo __('Acci&oacute;n');?></th>
 	</tr>
 	<?php
@@ -28,4 +33,6 @@
 </div>
 </div>
 <br />
-<input type='button' value='NUEVO ROL' onclick="location.href='/rols/add'" />
+<?php
+  echo $this->element('custom_button',array('controller' => "rols",'action' => 'add','label'=>"NUEVO ROL",'param'=>'no'));
+?>

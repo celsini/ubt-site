@@ -174,7 +174,7 @@ $rol = $usuario['Usuario']['rol_id'];
 				<ul>
 
                                     <li>
-                                            <?php echo $this->Html->link('Roles',array('controller'=>'Roles', 'action'=>'index'));?>
+                                            <?php echo $this->Html->link('Roles',array('controller'=>'Rols', 'action'=>'index'));?>
                                     </li>
 
                                      <li>

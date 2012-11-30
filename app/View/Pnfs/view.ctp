@@ -28,7 +28,7 @@
             <td><?php
   echo $this->element('custom_button',array('controller' => "pnfs",'action' => 'edit','label'=>"EDITAR",'param'=>$pnf['Pnf']['id'])); 
 ?></td>
-            <td><input type='button' value='ELIMINAR' onclick="if(confirm('¿Esta seguro que desea eliminar el registro?')){location.href='/pnfs/delete/<?php echo $pnf['Pnf']['id']?>'}" /></td>
+            <td><input type='button' value='ELIMINAR' onclick="if(confirm('¿Esta seguro que desea eliminar el registro?')){location.href='<?php echo $this->Html->url(array('controller' => 'pnfs','action' => 'delete',$pnf['Pnf']['id']));?>'}" /></td>
 
 	</tr>
 </table>

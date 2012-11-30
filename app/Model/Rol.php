@@ -31,9 +31,9 @@ class Rol extends AppModel {
  */
 	public $validate = array(
 		'co_rol' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
+			'notempty' => array(
+				'rule' => array('notempty'),
+				'message' => '↓ Campo Obligatorio ↓',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -43,17 +43,22 @@ class Rol extends AppModel {
 		'tx_rol' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => '↓ Campo Obligatorio ↓',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+                    'unique' => array(
+                        'rule' => 'isUnique',
+                        'required' => 'create',
+                        'message' => 'Rol ya existe verifique!'
+                        ),
 		),
 		'tx_descripcion_rol' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => '↓ Campo Obligatorio ↓',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

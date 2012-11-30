@@ -101,7 +101,7 @@ class EquipoMateriasController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
-		if (!$this->request->is('post')) {
+		if (!$this->request->is('get')) {
 			throw new MethodNotAllowedException();
 		}
 		$this->EquipoMateria->id = $id;
@@ -109,7 +109,7 @@ class EquipoMateriasController extends AppController {
 			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->EquipoMateria->delete()) {
-			$this->Session->setFlash(__('Informaci&oacute;n Elimina'));
+			$this->Session->setFlash(__('Informaci&oacute;n Eliminada'));
 			$this->redirect(array('action' => 'index'));
 		}
 		$this->Session->setFlash(__('Informaci&oacute;n no pudo ser eliminada'));

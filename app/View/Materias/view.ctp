@@ -41,7 +41,7 @@
             <td><?php
   echo $this->element('custom_button',array('controller' => "materias",'action' => 'edit','label'=>"EDITAR",'param'=>$materia['Materia']['id'])); 
 ?></td>
-            <td><input type='button' value='ELIMINAR' onclick="if(confirm('¿Esta seguro que desea eliminar el registro?')){location.href='/materias/delete/<?php echo $materia['Materia']['id']?>'}" /></td>
+        <td><input type='button' value='ELIMINAR' onclick="if(confirm('¿Esta seguro que desea eliminar el registro?')){location.href='<?php echo $this->Html->url(array('controller' => 'materias','action' => 'delete',$materia['Materia']['id']));?>'}" /></td>
 
 	</tr>
 </table>

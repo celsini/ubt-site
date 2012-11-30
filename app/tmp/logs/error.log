@@ -1557,3 +1557,86 @@ LINE 1: ...FT JOIN "universidad"."materias" AS "Materia" ON ("EquipoMat...
 #0 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 /var/www/ubtsite/index.php(40): require('/var/www/ubtsit...')
 #2 {main}
+2012-11-30 12:50:13 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «localidad_id_seq»
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/Database/Postgres.php(283): PDO->lastInsertId('localidad_id_se...')
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(987): Postgres->lastInsertId('localidad', 'id')
+#2 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(Localidad), Array, Array)
+#3 /var/www/ubtsite/app/Controller/LocalidadsController.php(43): Model->save(Array)
+#4 [internal function]: LocalidadsController->add()
+#5 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(LocalidadsController), Array)
+#6 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(LocalidadsController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#10 {main}
+2012-11-30 12:57:07 Error: [MethodNotAllowedException] Method Not Allowed
+#0 [internal function]: FacilitadorsController->delete('2')
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(FacilitadorsController), Array)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(FacilitadorsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-11-30 13:01:53 Error: [MethodNotAllowedException] Method Not Allowed
+#0 [internal function]: CentroformacionsController->delete('4')
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CentroformacionsController), Array)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CentroformacionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-11-30 13:05:14 Error: [MethodNotAllowedException] Method Not Allowed
+#0 [internal function]: EquipoEstudiosController->delete('3')
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EquipoEstudiosController), Array)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EquipoEstudiosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-11-30 13:08:45 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «equipo_materias_id_seq»
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/Database/Postgres.php(283): PDO->lastInsertId('equipo_materias...')
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(987): Postgres->lastInsertId('equipo_materias', 'id')
+#2 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(EquipoMateria), Array, Array)
+#3 /var/www/ubtsite/app/Controller/EquipoMateriasController.php(46): Model->save(Array)
+#4 [internal function]: EquipoMateriasController->add()
+#5 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EquipoMateriasController), Array)
+#6 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EquipoMateriasController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#10 {main}
+2012-11-30 13:08:51 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «equipo_materias_id_seq»
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/Database/Postgres.php(283): PDO->lastInsertId('equipo_materias...')
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(987): Postgres->lastInsertId('equipo_materias', 'id')
+#2 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(EquipoMateria), Array, Array)
+#3 /var/www/ubtsite/app/Controller/EquipoMateriasController.php(46): Model->save(Array)
+#4 [internal function]: EquipoMateriasController->add()
+#5 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EquipoMateriasController), Array)
+#6 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EquipoMateriasController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#10 {main}
+2012-11-30 13:18:02 Error: [MissingControllerException] Controller class RolesController could not be found.
+#0 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#2 {main}
+2012-11-30 13:21:18 Error: [MissingControllerException] Controller class RolesController could not be found.
+#0 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#2 {main}
+2012-11-30 13:21:22 Error: [CakeException] $controller does not implement an isAuthorized() method.
+#0 /var/www/ubtsite/lib/Cake/Controller/Component/Auth/BaseAuthorize.php(71): ControllerAuthorize->controller(Object(RolsController))
+#1 /var/www/ubtsite/lib/Cake/Controller/Component/AuthComponent.php(418): BaseAuthorize->__construct(Object(ComponentCollection), Array)
+#2 /var/www/ubtsite/lib/Cake/Controller/Component/AuthComponent.php(380): AuthComponent->constructAuthorize()
+#3 /var/www/ubtsite/lib/Cake/Controller/Component/AuthComponent.php(330): AuthComponent->isAuthorized(Array)
+#4 [internal function]: AuthComponent->startup(Object(RolsController))
+#5 /var/www/ubtsite/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /var/www/ubtsite/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 /var/www/ubtsite/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#10 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(RolsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#13 {main}

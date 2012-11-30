@@ -124,7 +124,7 @@ class UsuariosController extends AppController {
             throw new NotFoundException(__('El identificador no existe verifique!'));
         }
         if ($this->Usuario->delete()) {
-            $this->Session->setFlash(__('Informaci&oacute;n registrada eliminada'));
+            $this->Session->setFlash(__('Informaci&oacute;n eliminada'));
             $this->redirect(array('action' => 'index'));
         }
         $this->Session->setFlash(__(''));

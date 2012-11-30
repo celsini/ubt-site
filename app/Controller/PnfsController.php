@@ -79,7 +79,7 @@ class PnfsController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
-		if (!$this->request->is('post')) {
+		if (!$this->request->is('get')) {
 			throw new MethodNotAllowedException();
 		}
 		$this->Pnf->id = $id;
@@ -87,7 +87,7 @@ class PnfsController extends AppController {
 			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->Pnf->delete()) {
-			$this->Session->setFlash(__('Informaci&oacute;n Elimina'));
+			$this->Session->setFlash(__('Informaci&oacute;n Eliminada'));
 			$this->redirect(array('action' => 'index'));
 		}
 		$this->Session->setFlash(__('Informaci&oacute;n no pudo ser eliminada'));

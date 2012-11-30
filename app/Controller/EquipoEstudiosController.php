@@ -85,7 +85,7 @@ class EquipoEstudiosController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
-		if (!$this->request->is('post')) {
+		if (!$this->request->is('get')) {
 			throw new MethodNotAllowedException();
 		}
 		$this->EquipoEstudio->id = $id;
@@ -93,10 +93,10 @@ class EquipoEstudiosController extends AppController {
 			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->EquipoEstudio->delete()) {
-			$this->Session->setFlash(__('Informaci&oacute;n Elimina'));
+			$this->Session->setFlash(__('Informaci&oacute;n Eliminada'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Información no pudo ser elimina'));
+		$this->Session->setFlash(__('Información no pudo ser eliminada'));
 		$this->redirect(array('action' => 'index'));
 	}
     public function isAuthorized() {

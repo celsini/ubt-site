@@ -100,10 +100,10 @@ class PersonasController extends AppController {
 			throw new NotFoundException(__('Identificador no existe verifique!'));
 		}
 		if ($this->Persona->delete()) {
-			$this->Session->setFlash(__('Informaci&oacute;n Elimina'));
+			$this->Session->setFlash(__('Informaci&oacute;n Eliminada'));
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Informaci&oacute;n no pudo ser elimina'));
+		$this->Session->setFlash(__('Informaci&oacute;n no pudo ser eliminada'));
 		$this->redirect(array('action' => 'index'));
 	}
 

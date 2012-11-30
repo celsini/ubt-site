@@ -77,8 +77,8 @@
                         <table width="780"  border="0" align="center" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td width="370" height="100" align="center" valign="middle">
-                                    <!--<img src="<?php echo $this->webroot;?>img/tituloCentral.png" alt="imagen"  />-->
-                                    Logo Central
+                                    <img src="<?php echo $this->webroot;?>img/tituloCentralUbt.png" alt="imagen"  />
+                                    <!--Logo Central-->
                                     <br />
                                     <!--<img src="<?php echo $this->webroot;?>img/version.png" alt="imagen"  />-->
                                 </td>
@@ -88,8 +88,8 @@
                                             <td>
 
                                                 
-                                               <!-- <img src="<?php echo $this->webroot;?>img/logoPrincipal.jpg" border="0" alt="logorojo" style="padding-left:70px;"  />-->
-                                               Logo Izquierdo
+                                                <img src="<?php echo $this->webroot;?>img/logo_ubt.jpg" border="0" alt="logorojo" width="300px" style="padding-left:40px;"  />
+                                               <!--Logo Izquierdo-->
                                             </td>
                                         </tr>
                                     </table></td>
