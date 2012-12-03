@@ -370,3 +370,98 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
 require - APP/webroot/index.php, line 92
 [main] - ROOT/index.php, line 40
 
+2012-12-03 13:57:55 Notice: Notice (8): Undefined property: XTCPDF::$xfooterfont in [/var/www/ubtsite/app/Vendor/xtcpdf.php, line 45]
+Trace:
+XTCPDF::Footer() - APP/Vendor/xtcpdf.php, line 45
+TCPDF::setFooter() - APP/Vendor/tcpdf/tcpdf.php, line 4476
+TCPDF::endPage() - APP/Vendor/tcpdf/tcpdf.php, line 4023
+TCPDF::Close() - APP/Vendor/tcpdf/tcpdf.php, line 3871
+TCPDF::Output() - APP/Vendor/tcpdf/tcpdf.php, line 8933
+include - APP/View/Rols/imprimir.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 910
+View::_render() - CORE/Cake/View/View.php, line 874
+View::render() - CORE/Cake/View/View.php, line 465
+Controller::render() - CORE/Cake/Controller/Controller.php, line 959
+RolsController::imprimir() - APP/Controller/RolsController.php, line 106
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 103
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+require - APP/webroot/index.php, line 92
+[main] - ROOT/index.php, line 41
+
+2012-12-03 14:05:45 Notice: Notice (8): Undefined variable: pdf in [/var/www/ubtsite/app/View/Rols/imprimir.ctp, line 33]
+Trace:
+include - APP/View/Rols/imprimir.ctp, line 33
+View::_evaluate() - CORE/Cake/View/View.php, line 910
+View::_render() - CORE/Cake/View/View.php, line 874
+View::render() - CORE/Cake/View/View.php, line 465
+Controller::render() - CORE/Cake/Controller/Controller.php, line 959
+RolsController::imprimir() - APP/Controller/RolsController.php, line 106
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 103
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+require - APP/webroot/index.php, line 92
+[main] - ROOT/index.php, line 41
+
+2012-12-03 14:06:19 Notice: Notice (8): Undefined variable: pdf in [/var/www/ubtsite/app/View/Rols/imprimir.ctp, line 33]
+Trace:
+include - APP/View/Rols/imprimir.ctp, line 33
+View::_evaluate() - CORE/Cake/View/View.php, line 910
+View::_render() - CORE/Cake/View/View.php, line 874
+View::render() - CORE/Cake/View/View.php, line 465
+Controller::render() - CORE/Cake/Controller/Controller.php, line 959
+RolsController::imprimir() - APP/Controller/RolsController.php, line 106
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 103
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+require - APP/webroot/index.php, line 92
+[main] - ROOT/index.php, line 41
+
+2012-12-03 14:06:30 Notice: Notice (8): Undefined variable: pdf in [/var/www/ubtsite/app/View/Rols/imprimir.ctp, line 33]
+Trace:
+include - APP/View/Rols/imprimir.ctp, line 33
+View::_evaluate() - CORE/Cake/View/View.php, line 910
+View::_render() - CORE/Cake/View/View.php, line 874
+View::render() - CORE/Cake/View/View.php, line 465
+Controller::render() - CORE/Cake/Controller/Controller.php, line 959
+RolsController::imprimir() - APP/Controller/RolsController.php, line 106
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 103
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+require - APP/webroot/index.php, line 92
+[main] - ROOT/index.php, line 41
+
+2012-12-03 14:09:32 Notice: Notice (8): Undefined variable: subtable in [/var/www/ubtsite/app/View/Rols/imprimir.ctp, line 90]
+Trace:
+include - APP/View/Rols/imprimir.ctp, line 90
+View::_evaluate() - CORE/Cake/View/View.php, line 910
+View::_render() - CORE/Cake/View/View.php, line 874
+View::render() - CORE/Cake/View/View.php, line 465
+Controller::render() - CORE/Cake/Controller/Controller.php, line 959
+RolsController::imprimir() - APP/Controller/RolsController.php, line 106
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 103
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+require - APP/webroot/index.php, line 92
+[main] - ROOT/index.php, line 41
+
+2012-12-03 14:10:16 Notice: Notice (8): Undefined variable: subtable in [/var/www/ubtsite/app/View/Rols/imprimir.ctp, line 90]
+Trace:
+include - APP/View/Rols/imprimir.ctp, line 90
+View::_evaluate() - CORE/Cake/View/View.php, line 910
+View::_render() - CORE/Cake/View/View.php, line 874
+View::render() - CORE/Cake/View/View.php, line 465
+Controller::render() - CORE/Cake/Controller/Controller.php, line 959
+RolsController::imprimir() - APP/Controller/RolsController.php, line 106
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 103
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 85
+require - APP/webroot/index.php, line 92
+[main] - ROOT/index.php, line 41
+

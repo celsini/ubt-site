@@ -97,4 +97,13 @@ class RolsController extends AppController {
         //var_dump($usuario = $this->Session->read('userProfileData'));
         return true;
     }
+
+
+    function imprimir()
+    {
+        Configure::write('debug',0); // Otherwise we cannot use this method while developing
+        $this->layout = 'pdf'; //this will use the pdf.ctp layout
+        $this->render();
+    } 
+    
 }

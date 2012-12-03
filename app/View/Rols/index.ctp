@@ -36,3 +36,9 @@
 <?php
   echo $this->element('custom_button',array('controller' => "rols",'action' => 'add','label'=>"NUEVO ROL",'param'=>'no'));
 ?>
+
+<br />
+<br />
+<?php
+  echo $this->element('custom_button',array('controller' => "rols",'action' => 'imprimir','label'=>"IMPRIMIR PDF",'param'=>'no'));
+?>
