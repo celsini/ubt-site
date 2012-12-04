@@ -208,7 +208,7 @@ $rol = $usuario['Usuario']['rol_id'];
                        <?php if($rol==1 || $rol==2): ?>
                         <li><a href="#" >Reportes</a>
 				<ul>
-                                        <li><?php echo $this->Html->link('Certificado de notas',array('controller'=>'nada', 'action'=>'index'));?></li>
+                                        <li><?php echo $this->Html->link('Certificado de notas',array('controller'=>'Calificacions', 'action'=>'index'));?></li>
                                         
                                                
 				</ul>

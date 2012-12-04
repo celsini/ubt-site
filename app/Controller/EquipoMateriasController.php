@@ -54,7 +54,17 @@ class EquipoMateriasController extends AppController {
                 $this->EquipoMateria->EquipoEstudio->recursive=1;
 		$equipoEstudios = $this->EquipoMateria->EquipoEstudio->find('list');
                 $meses = $this->mesesArray;
-                $results = $this->EquipoMateria->Facilitador->Persona->find('all');
+              
+ 
+                 $join = array('joins' => array(array(
+                            'table' => 'facilitador',
+                            'alias' => 'Facilitador',
+                            'type' => 'inner',
+                            'foreignKey' => false,
+                            'conditions'=> array('Facilitador.persona_id = Persona.id')
+                )));
+                 
+                $results = $this->EquipoMateria->Facilitador->Persona->find('all',$join);
                 $options = Set::combine($results, '{n}.Persona.id', array('{0} -- {1} -- {2}', '{n}.Persona.co_cedula','{n}.Persona.tx_nombre1', '{n}.Persona.tx_apellido1'));
                 
 		$this->set(compact('materias', 'facilitadors', 'equipoEstudios','meses','options'));

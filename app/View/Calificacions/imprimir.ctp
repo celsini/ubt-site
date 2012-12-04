@@ -1,13 +1,14 @@
 <?php
 App::import('Vendor','tcpdf/tcpdf');
 $tcpdf = new TCPDF();
-
+$tcpdf->SetPrintHeader(false);
+$tcpdf->SetPrintFooter(false);
 $tcpdf->AddPage();
 
 // LOGO
 $html = '
 <table cellpadding="1" cellspacing="1" border="0" style="text-align:center;">
-<tr><td style="text-align:center;"><img src="/app/webroot/img/logo.png" border="0" height="150" width="80" align="middle" /></td></tr>
+<tr><td style="text-align:center;">'.$this->Html->image('logo.png', array('alt' => 'logo',"align"=>"middle","border"=>"0","width"=>"80px","height"=>"150px")).'</td></tr>
 
 </table>';
 
@@ -104,6 +105,6 @@ $tcpdf->writeHTML($html, false, false, false, false, '');
 //$tcpdf->SetFont($textfont,'',9);
 
 
-$tcpdf->Output('filename.pdf', 'D');
+$tcpdf->Output('CertificadoDeNotas.pdf', 'D');
 ?>
 
