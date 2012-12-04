@@ -1640,3 +1640,176 @@ LINE 1: ...FT JOIN "universidad"."materias" AS "Materia" ON ("EquipoMat...
 #11 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
 #13 {main}
+2012-12-04 12:50:51 Error: [MissingViewException] View file "/var/www/ubtsite/app/View/Calificacions/add.ctp" is missing.
+#0 /var/www/ubtsite/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CalificacionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-12-04 12:52:17 Error: [MissingViewException] View file "/var/www/ubtsite/app/View/Calificacions/add.ctp" is missing.
+#0 /var/www/ubtsite/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CalificacionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-12-04 12:54:25 Error: [MissingViewException] View file "/var/www/ubtsite/app/View/Calificacions/add.ctp" is missing.
+#0 /var/www/ubtsite/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CalificacionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-12-04 12:54:29 Error: [MissingViewException] View file "/var/www/ubtsite/app/View/Calificacions/index.ctp" is missing.
+#0 /var/www/ubtsite/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CalificacionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-12-04 12:57:38 Error: [MissingViewException] View file "/var/www/ubtsite/app/View/Calificacions/index.ctp" is missing.
+#0 /var/www/ubtsite/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CalificacionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-12-04 12:58:14 Error: [MissingViewException] View file "/var/www/ubtsite/app/View/Calificacions/index.ctp" is missing.
+#0 /var/www/ubtsite/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CalificacionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-12-04 12:58:17 Error: [MissingViewException] View file "/var/www/ubtsite/app/View/Calificacions/index.ctp" is missing.
+#0 /var/www/ubtsite/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CalificacionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-12-04 13:00:12 Error: [MissingViewException] View file "/var/www/ubtsite/app/View/Calificacions/index.ctp" is missing.
+#0 /var/www/ubtsite/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CalificacionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-12-04 13:00:40 Error: [MissingViewException] View file "/var/www/ubtsite/app/View/Calificacions/index.ctp" is missing.
+#0 /var/www/ubtsite/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CalificacionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-12-04 13:01:07 Error: [MissingActionException] Action CalificacionsController::index() could not be found.
+#0 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CalificacionsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#4 {main}
+2012-12-04 13:01:53 Error: [MissingViewException] View file "/var/www/ubtsite/app/View/Calificacions/index.ctp" is missing.
+#0 /var/www/ubtsite/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CalificacionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-12-04 13:08:13 Error: [MissingViewException] View file "/var/www/ubtsite/app/View/Calificacions/index.ctp" is missing.
+#0 /var/www/ubtsite/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CalificacionsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-12-04 13:17:50 Error: [PDOException] SQLSTATE[22003]: Numeric value out of range: 7 ERROR:  el entero está fuera de rango
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(437): PDOStatement->execute(Array)
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('INSERT INTO "un...', Array)
+#2 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(985): DboSource->execute('INSERT INTO "un...')
+#3 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(Materia), Array, Array)
+#4 /var/www/ubtsite/app/Controller/MateriasController.php(43): Model->save(Array)
+#5 [internal function]: MateriasController->add()
+#6 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(MateriasController), Array)
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(MateriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#11 {main}
+2012-12-04 13:18:07 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «materias_id_seq»
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/Database/Postgres.php(283): PDO->lastInsertId('materias_id_seq')
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(987): Postgres->lastInsertId('materias', 'id')
+#2 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(Materia), Array, Array)
+#3 /var/www/ubtsite/app/Controller/MateriasController.php(43): Model->save(Array)
+#4 [internal function]: MateriasController->add()
+#5 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(MateriasController), Array)
+#6 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(MateriasController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#10 {main}
+2012-12-04 13:18:18 Error: [PDOException] SQLSTATE[22003]: Numeric value out of range: 7 ERROR:  el entero está fuera de rango
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(437): PDOStatement->execute(Array)
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('INSERT INTO "un...', Array)
+#2 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(985): DboSource->execute('INSERT INTO "un...')
+#3 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(Materia), Array, Array)
+#4 /var/www/ubtsite/app/Controller/MateriasController.php(43): Model->save(Array)
+#5 [internal function]: MateriasController->add()
+#6 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(MateriasController), Array)
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(MateriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#11 {main}
+2012-12-04 13:18:21 Error: [PDOException] SQLSTATE[22003]: Numeric value out of range: 7 ERROR:  el entero está fuera de rango
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(437): PDOStatement->execute(Array)
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('INSERT INTO "un...', Array)
+#2 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(985): DboSource->execute('INSERT INTO "un...')
+#3 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(Materia), Array, Array)
+#4 /var/www/ubtsite/app/Controller/MateriasController.php(43): Model->save(Array)
+#5 [internal function]: MateriasController->add()
+#6 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(MateriasController), Array)
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(MateriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#11 {main}
+2012-12-04 13:20:44 Error: [PDOException] SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «equipo_materias» viola la llave foránea «equipo_materia_fk1»
+DETAIL:  La llave (facilitador_id)=(11) no está presente en la tabla «facilitador».
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(437): PDOStatement->execute(Array)
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('INSERT INTO "un...', Array)
+#2 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(985): DboSource->execute('INSERT INTO "un...')
+#3 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(EquipoMateria), Array, Array)
+#4 /var/www/ubtsite/app/Controller/EquipoMateriasController.php(46): Model->save(Array)
+#5 [internal function]: EquipoMateriasController->add()
+#6 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EquipoMateriasController), Array)
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EquipoMateriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#11 {main}
+2012-12-04 13:20:49 Error: [PDOException] SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «equipo_materias» viola la llave foránea «equipo_materia_fk1»
+DETAIL:  La llave (facilitador_id)=(11) no está presente en la tabla «facilitador».
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(437): PDOStatement->execute(Array)
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('INSERT INTO "un...', Array)
+#2 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(985): DboSource->execute('INSERT INTO "un...')
+#3 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(EquipoMateria), Array, Array)
+#4 /var/www/ubtsite/app/Controller/EquipoMateriasController.php(46): Model->save(Array)
+#5 [internal function]: EquipoMateriasController->add()
+#6 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EquipoMateriasController), Array)
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EquipoMateriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#11 {main}

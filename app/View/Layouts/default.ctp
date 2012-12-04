@@ -199,7 +199,7 @@ $rol = $usuario['Usuario']['rol_id'];
                                             <?php echo $this->Html->link('Equipos / Materias',array('controller'=>'EquipoMaterias', 'action'=>'index'));?>
                                     </li>
                                      <li>
-                                            <?php echo $this->Html->link('Calificaciones',array('controller'=>'nada', 'action'=>'index'));?>
+                                            <?php echo $this->Html->link('Calificaciones',array('controller'=>'Calificacions', 'action'=>'add'));?>
                                     </li>
 				</ul>
 			</li>

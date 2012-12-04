@@ -3,8 +3,7 @@ App::uses('AppModel', 'Model');
 /**
  * Calificacion Model
  *
- * @property EquipoEstudio $EquipoEstudio
- * @property Materia $Materia
+ * @property EquipoMateria $EquipoMateria
  * @property Persona $Persona
  */
 class Calificacion extends AppModel {
@@ -30,7 +29,7 @@ class Calificacion extends AppModel {
 			'notempty' => array(
 				'rule' => array('notempty'),
 				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
+				'allowEmpty' => false
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
@@ -40,18 +39,18 @@ class Calificacion extends AppModel {
 			'notempty' => array(
 				'rule' => array('notempty'),
 				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
+				'allowEmpty' => false
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'materia_id' => array(
+		'equipo_materia_id' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
+				'message' => 'Seleccione la materia',
+				'allowEmpty' => false,
+				'required' => true,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
@@ -69,7 +68,7 @@ class Calificacion extends AppModel {
 		'nu_calificacion' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Introduzca la calificacion',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -86,16 +85,9 @@ class Calificacion extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'EquipoEstudio' => array(
-			'className' => 'EquipoEstudio',
-			'foreignKey' => 'equipo_estudio_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'Materia' => array(
-			'className' => 'Materia',
-			'foreignKey' => 'materia_id',
+		'EquipoMAteria' => array(
+			'className' => 'EquipoMateria',
+			'foreignKey' => 'equipo_materia_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
