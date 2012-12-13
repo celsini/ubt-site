@@ -1843,3 +1843,55 @@ DETAIL:  La llave (facilitador_id)=(11) no está presente en la tabla «facilita
 #0 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
 #2 {main}
+2012-12-06 14:55:56 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «calificacion_id_seq»
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/Database/Postgres.php(283): PDO->lastInsertId('calificacion_id...')
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(987): Postgres->lastInsertId('calificacion', 'id')
+#2 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(Calificacion), Array, Array)
+#3 /var/www/ubtsite/app/Controller/CalificacionsController.php(162): Model->save(Array)
+#4 [internal function]: CalificacionsController->cargar()
+#5 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CalificacionsController), Array)
+#6 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CalificacionsController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#10 {main}
+2012-12-06 14:56:17 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «calificacion_id_seq»
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/Database/Postgres.php(283): PDO->lastInsertId('calificacion_id...')
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(987): Postgres->lastInsertId('calificacion', 'id')
+#2 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(Calificacion), Array, Array)
+#3 /var/www/ubtsite/app/Controller/CalificacionsController.php(162): Model->save(Array)
+#4 [internal function]: CalificacionsController->cargar()
+#5 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CalificacionsController), Array)
+#6 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CalificacionsController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#10 {main}
+2012-12-07 08:13:52 Error: [MissingViewException] View file "/var/www/ubtsite/app/View/Certificados/certificacion.ctp" is missing.
+#0 /var/www/ubtsite/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CertificadosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-12-07 08:14:18 Error: [MissingViewException] View file "/var/www/ubtsite/app/View/Certificados/certificacion.ctp" is missing.
+#0 /var/www/ubtsite/lib/Cake/View/View.php(462): View->_getViewFileName(NULL)
+#1 /var/www/ubtsite/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CertificadosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#6 {main}
+2012-12-07 09:12:25 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «calificacion_id_seq»
+#0 /var/www/ubtsite/lib/Cake/Model/Datasource/Database/Postgres.php(283): PDO->lastInsertId('calificacion_id...')
+#1 /var/www/ubtsite/lib/Cake/Model/Datasource/DboSource.php(987): Postgres->lastInsertId('calificacion', 'id')
+#2 /var/www/ubtsite/lib/Cake/Model/Model.php(1721): DboSource->create(Object(Calificacion), Array, Array)
+#3 /var/www/ubtsite/app/Controller/CalificacionsController.php(163): Model->save(Array)
+#4 [internal function]: CalificacionsController->cargar()
+#5 /var/www/ubtsite/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CalificacionsController), Array)
+#6 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/ubtsite/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CalificacionsController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/ubtsite/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/ubtsite/index.php(41): require('/var/www/ubtsit...')
+#10 {main}

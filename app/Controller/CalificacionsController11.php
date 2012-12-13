@@ -7,7 +7,7 @@ App::uses('AppController', 'Controller');
  */
 class CalificacionsController extends AppController {
 
-
+ 
 /**
  * index method
  *
@@ -55,7 +55,6 @@ class CalificacionsController extends AppController {
                             $this->EquipoEstudio->recursive=-1;
                             $cod = trim($this->data['Calificacions']['eq']);
                             $codd = $this->EquipoEstudio->find('all',array('fields'=>array("EquipoEstudio.id"),'conditions'=>array("EquipoEstudio.co_equipo_estudio"=>$cod)));                                                
-                            var_dump( $codd);
                             
 
                             if ($codd && $cii) {
@@ -68,7 +67,7 @@ class CalificacionsController extends AppController {
                             }
                             else {
                                 $this->Session->setFlash(__('N&uacute;mero de c&eacute;dula o c&oacute;digo de equipo de estudio inv&aacutelido!'));
-                               // $this->redirect(array('action' => 'add'));
+                                $this->redirect(array('action' => 'add'));
                             }
                         }
                         else {
@@ -207,32 +206,13 @@ class CalificacionsController extends AppController {
 
         if ($this->request['pass']) {
             $id = $this->request['pass'];
-            $this->loadModel('Certificado');
-            $idd = $this->Certificado->find('first',array('conditions'=>array("Certificado.id"=>$id)));
-            if ($idd) {
-                
-                $idd = $idd['Certificado']['persona_id'];
-                
-                $this->loadModel('Estudiante');
-                $estudiante = $this->Estudiante->read(null,$idd);
-                $this->set('estudiante',$estudiante);  
-                $this->set('fecha',$this->cambiaf_a_normal($estudiante['Estudiante']['fe_nacimiento']));
-
-                $this->loadModel('Directiva');
-                $this->set('directiva',$this->Directiva->find('all')); 
-
-                $this->loadModel('Coordinador');
-                $this->set('coordinador',$this->Coordinador->find('all')); 
-
-                $this->loadModel('Nota');
-                $this->set('notas',$this->Nota->find('all',array('conditions'=>array("Nota.persona_id"=>$idd))));
-                
-                $this->render();
-            }            
+            $this->loadModel('Estudiante');
+            $this->set('estudiante',$this->Estudiante->read(null,$id));            
         }
 
+        $this->render();
+    } 
         
-    }   
         
     public function isAuthorized() {
         //var_dump($usuario = $this->Session->read('userProfileData'));

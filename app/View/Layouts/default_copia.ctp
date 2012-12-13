@@ -11,6 +11,7 @@
 <?php
 /*Being Thema de la aplicacion*/
         echo $this->Html->css("themes/smoothness/jquery-ui-1.8.5.custom.css");
+        //echo $this->Html->css("themes/smoothness/jquery-ui_1.9.2.css");
         echo $this->Html->css("themes/ui.jqgrid.css");
         echo $this->Html->css("themes/smoothness/css/jquery.searchFilter.css");
         echo $this->Html->css("themes/formato/celda/celda.css");
@@ -32,12 +33,14 @@
 
 /*Begin Libreria Jqgrid*/
 	echo $this->Html->script('js/jquery.min.js');
+        //echo $this->Html->script('js/jquery-1.8.3.js');
 /*End Libreria Jqgrid*/
 
 /*Begin Traducir el datapicker*/
        // echo $this->Html->script('i18n/jquery.ui.datepicker-es.js');
 /*End datapicker*/
         echo $this->Html->script(array('js/jquery-ui-1.8.2.custom.min.js','js/i18n/grid.locale-sp.js','js/jquery.jqGrid.min.js','js/ui.datepicker-es.js','funciones_jq','jquery.filestyle.mini','jquery.uitableedit.js','jquery.maxlength-min.js'));
+        //echo $this->Html->script(array('js/jquery-ui-1.9.2.js','js/i18n/grid.locale-sp.js','js/jquery.jqGrid.min.js','js/ui.datepicker-es.js','funciones_jq','jquery.filestyle.mini','jquery.uitableedit.js','jquery.maxlength-min.js'));
 
 /*Mesasages Using sexy Librery*/
  echo $this->Html->css('sexy_alertbox/sexyalertbox');
@@ -208,7 +211,7 @@ $rol = $usuario['Usuario']['rol_id'];
                        <?php if($rol==1 || $rol==2): ?>
                         <li><a href="#" >Reportes</a>
 				<ul>
-                                        <li><?php echo $this->Html->link('Certificado de notas',array('controller'=>'Certificados', 'action'=>'certificacion'));?></li>
+                                        <li><?php echo $this->Html->link('Certificado de notas',array('controller'=>'Calificacions', 'action'=>'index'));?></li>
                                         
                                                
 				</ul>

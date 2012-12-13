@@ -4,19 +4,19 @@ App::uses('AppModel', 'Model');
  * Estudiante Model
  *
  */
-class Estudiante extends AppModel {
+class Certificacion extends AppModel {
 /**
  * Use table
  *
  * @var mixed False or table name
  */
-	public $useTable = 'estudiante';
+	public $useTable = 'certificacion';
 /**
  * Display field
  *
  * @var string
  */
-	public $displayField = 'persona';
+	//public $displayField = 'tx_nombre1';
 
 
 }
